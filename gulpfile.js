@@ -7,30 +7,30 @@ var bourbon = require("node-bourbon").includePaths;
 var neat = require("node-neat").includePaths;
 
 gulp.task('styles', function () {
-	gulp.src('sass/*.scss')
+	gulp.src('./src/sass/*.scss')
 		.pipe(sass({
 			includePaths: bourbon,
 			includePaths: neat
 		}))
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('./public_html/css/'));
 });
 
 gulp.task('scripts', function() {
 	scripts = [
-		'./js/src/required.js',
-		'./js/src/*.js',
-		'./js/src/**/*.js'
+		'./src/js/required.js',
+		'./src/js/*.js',
+		'./src/js/**/*.js'
 	];
 
 	gulp.src(scripts)
 		.pipe(concat('build.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('./js/'));
+		.pipe(gulp.dest('./public_html/js/'));
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./sass/*.scss', ['styles']);
-    gulp.watch('./js/src/*.js', ['scripts']);
+    gulp.watch('./src/sass/*.scss', ['styles']);
+    gulp.watch('./src/js/*.js', ['scripts']);
 });
 
 gulp.task('default', ['styles', 'scripts', 'watch']);

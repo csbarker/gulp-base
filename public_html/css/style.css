@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+P {
+  font-size: 22.652px;
+  color: blue; }
+
+A {
+  color: red; }
+
+H1 {
+  color: blue;
+  font-size: 9.88875px; }
