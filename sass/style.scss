@@ -1,0 +1,19 @@
+// wtf
+@import "bourbon";
+@import "neat"; 
+
+$test: blue;
+
+P {
+	font-size: golden-ratio(14px,  1);
+	color: $test;
+}
+
+A {
+	color:red;
+}
+
+H1 {
+	color:blue;
+	font-size: golden-ratio(16px, -1);
+}

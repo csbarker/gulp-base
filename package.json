@@ -1,0 +1,19 @@
+{
+  "name": "GruntTest",
+  "version": "0.0.0",
+  "description": "This is a test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Callum Barker",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-sass": "~2.3.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-uglify": "~1.5.3",
+    "node-bourbon": "~4.2.8",
+    "node-neat": "~1.7.2"
+  }
+}
